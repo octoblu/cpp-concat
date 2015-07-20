@@ -1,6 +1,6 @@
 {
   "name": "cpp-concat",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Concatenate c++ files in a directory, and remove all #include statements referencing files that were concatenated.",
   "main": "index.js",
   "scripts": {
