@@ -10,7 +10,7 @@ COMBINED_H_FILE=""
 
 rm -rf $TMP_DIR
 mkdir -p $TMP_DIR
-
+i
 rm -rf $DIST_DIR
 mkdir -p $DIST_DIR
 
