@@ -14,11 +14,10 @@ return console.log "source directory is required" unless program.sourceDirectory
 return console.log "destination directory is required" unless program.destinationDirectory?
 return console.log "library name is required" unless program.libraryName?
 
-console.log "#{JSON.stringify program, null, 2}"
-
-CppConcat.concat(
+concater = new CppConcat( 
   program.sourceDirectory
   program.destinationDirectory
   program.libraryName
-  (error) => console.error "something bad happened! #{error.message}" if error?
 )
+
+concater.concat (error) => console.error "something bad happened! #{error.message}" if error?
